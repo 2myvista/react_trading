@@ -14,6 +14,7 @@ export const AutoComplete = () => {
 				{results.map((result)=> {
 					return (
 						<li onClick={() => {
+						{/*addStock добавляет выбранный элемент в watchList */}
 							addStock(result.symbol)
 							setSearch("")
             }} key={result.symbol} className="dropdown-item">{result.description} ({result.symbol})</li>

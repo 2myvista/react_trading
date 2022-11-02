@@ -51,7 +51,7 @@ export const StockList = () => {
 					}
 					
 				})
-				console.log(data);
+				//console.log(data);
 				if (isMounted) {
 					setStock(data);
 				}
@@ -108,6 +108,5 @@ export const StockList = () => {
 				)}
 			</tbody>
 		</table>
-
 	</div>	
 };

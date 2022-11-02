@@ -14,10 +14,11 @@ export const WatchListContextProvider = (props) => {
 
 	const addStock = (stock) => {
 		// если в watchList нет элемента stock то добавляем его
+		console.log(stock);
 		if (watchList.indexOf(stock)=== -1) {
 			setWatchList([...watchList, stock])
 		}
-
+console.log(setWatchList);
 	}
 
 	const deleteStock = (stock) => {
@@ -31,6 +32,7 @@ export const WatchListContextProvider = (props) => {
 
 
 	return <WatchListContext.Provider value={{watchList, addStock, deleteStock}}>
+	{/*говорим, все пропсы должны быть видимы внутри всех вызываемых компонентов*/}
 		{props.children}
 	</WatchListContext.Provider>
 
